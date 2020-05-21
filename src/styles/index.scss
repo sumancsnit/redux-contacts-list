@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+$theme-colors: (
+  'primary': #2196f3,
+  'success': #4caf50,
+  'danger': #e91e63,
+  'warning': #ff9800,
+);
+
+@import '~bootstrap/scss/bootstrap.scss';
+
+body {
+  padding-top: 5rem;
+}
