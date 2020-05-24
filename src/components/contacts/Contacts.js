@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import Contact from './Contact';
 
 export default function Contacts() {
-  const contacts = useSelector((state) => state.contacts);
+  const contacts = useSelector((state) => state.contact.contacts);
   return (
     <div>
       <table className='table shadow'>
@@ -18,11 +18,12 @@ export default function Contacts() {
             <th>Name</th>
             <th>Phone</th>
             <th>E-mail</th>
+            <th>Actions</th>
           </tr>
         </thead>
         <tbody>
-          {contacts.map((contact, idx) => (
-            <Contact key={`${contact.name}idx`} contact={contact} />
+          {contacts.map((contact) => (
+            <Contact key={contact.id} contact={contact} />
           ))}
         </tbody>
       </table>

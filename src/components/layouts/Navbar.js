@@ -1,16 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
     <div className='navbar shadow fixed-top navbar-expand-sm navbar-dark bg-primary'>
       <div className='container'>
-        <a href='#' className='navbar-brand'>
+        <Link to='/' className='navbar-brand'>
           suman
-        </a>
+        </Link>
         <div>
-          <a href='#' className='btn btn-light ml-auto'>
+          <Link to='/add' className='btn btn-light ml-auto'>
             Button
-          </a>
+          </Link>
         </div>
       </div>
     </div>
